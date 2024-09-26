@@ -15,7 +15,7 @@ const appRoutes:Routes =[
 {path:'',component:PropertyListComponent},
  {path:'Add-Property',component:AddPropertyComponent},
  {path:'Sell-Property',component:AddPropertyComponent},
-
+ {path:'Detail-Property',component:PropertyDetailComponent},
  {path:'Detail-Property/:id',component:PropertyDetailComponent},
 // {
 //   path:'',component:AddPropertyComponent
