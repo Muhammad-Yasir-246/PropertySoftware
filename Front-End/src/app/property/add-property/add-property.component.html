@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-header">
+        Add New Property
+    </div>
+    <div class="card-body">
+        <form (ngSubmit)="Onsubmit(Form)" #Form="ngForm">
+
+
+            <div class="form-group col-12">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" #propName="ngModel" [(ngModel)]="property.name" name="Name"
+                    required minlength="5">
+                <span *ngIf="!propName.valid && propName.touched" class="Error-Block">
+                    <span *ngIf="propName.errors.required"> Please Provide Type</span>
+                    <span *ngIf="propName.errors.minlength"> Name Must be atleast 5 char long</span>
+                </span>
+            </div>
+
+
+            <div class="form-group col-12">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" #propType="ngModel" [(ngModel)]="property.type" name="Type"
+                    required minlength="5">
+                <span *ngIf="!propType.valid && propType.touched" class="Error-Block">
+                    <span *ngIf="propType.errors.required"> Please Provide Type</span>
+                    <span *ngIf="propType.errors.minlength"> Type Must be atleast 5 char long</span>
+                </span>
+            </div>
+
+
+            <div class="form-group col-12">
+                <label for="price">Price</label>
+                <input type="text" class="form-control" #propPrice="ngModel" [(ngModel)]="property.price" name="Price"
+                    required minlength="5">
+                <span *ngIf="!propPrice.valid && propPrice.touched" class="Error-Block">
+
+                    <span *ngIf="propPrice.errors.required"> Please Provide Price</span>
+                    <span *ngIf="propPrice.errors.minlength"> Type Must be atleast 5 char long</span>
+                </span>
+            </div>
+
+
+            <div>
+                <button [disabled]="!Form.valid" type="submit" class="btn btn-primary m-2">Save</button>
+                <button type="reset" class="btn btn-primary m-2">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,13 +1,24 @@
- <div class="card">
-   <div class="img-wrapper">
+<head>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-      <img class="propImg p-2" src="assets/images/House.jpg">
-   </div>
-       <div class="card-body p-2">
-         <h1>{{passingdata.Id}}</h1>
-         <h1>{{passingdata.Name}}</h1>
-        <h1>{{passingdata.Type}}</h1>
-        <h1>{{passingdata.Price}}</h1>
-      </div>
-      
-   </div>
+<div class="card">
+  <div class="img-wrapper">
+     <img class="propImg p-2" src="assets/images/{{Property.Image}}">
+     <div class="button-container">
+        <button class="btn btn-primary" routerLink="/Property-Details/{{Property.Id}}"><i class="fas fa-edit"></i></button>
+        
+           
+        <button class="btn btn-primary"> <i class="fas fa-phone"></i> </button>
+        
+          
+     </div>
+  </div>
+  <div class="card-body p-2">
+     <h1>{{Property.Id}}</h1>
+     <h1>{{Property.Name}}</h1>
+     <h1>{{Property.Type}}</h1>
+     <h1>{{Property.Price}}</h1>
+  </div>
+</div>

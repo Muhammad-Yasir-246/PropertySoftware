@@ -1,0 +1,34 @@
+[
+    {
+    "Id":1,
+    "Name":"Birla House",
+    "SellRent":2,
+    "Type":"House",
+    "Price":1200,
+    "Image":"House 1.jpg"
+},
+{
+  "Id":2,
+  "Name":"John House",
+  "SellRent":1,
+  "Type":"House",
+  "Price":1500,
+  "Image":"House2.jpg"
+},
+{
+  "Id":3,
+  "Name":"kyle House",
+  "SellRent":2,
+  "Type":"House",
+  "Price":1200,
+  "Image":"House 3.jpg"
+},
+{
+  "Id":4,
+  "Name":"casito House",
+  "SellRent":1,
+  "Type":"House",
+  "Price":1200,
+  "Image":"House.jpg"
+}
+]
