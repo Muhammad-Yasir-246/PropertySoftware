@@ -10,7 +10,7 @@
               <label for="name" class="form-label">Name</label>
               <input type="text" class="form-control" 
               formControlName="userName">
-              <span class="Error-Block" *ngIf="!userName.valid && userName.touched ">Pleasa Provide Name</span>
+              <span class="Error-Block" *ngIf="!userName.valid && (userName.touched || usersubmitted) ">Pleasa Provide Name</span>
              
           </div>
   
@@ -18,7 +18,7 @@
             <label for="email" class="form-label">Email</label>
             <input type="text" class="form-control" 
             formControlName="Email">
-            <span class="Error-Block" *ngIf="!Email.valid && Email.touched ">Pleasa Provide Email
+            <span class="Error-Block" *ngIf="!Email.valid && (Email.touched || usersubmitted) ">Pleasa Provide Email
               <span *ngif="email.hasError('required')">
                 please provide email Id
                 
